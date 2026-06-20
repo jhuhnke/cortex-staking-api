@@ -1,0 +1,12 @@
+C:\Users\jessi\git\cortex-staking-api\target\debug\deps\sqlx-77f590dcbb4e3075.d: C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\lib.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\any\mod.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\macros\mod.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\ty_match.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\spec_error.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\lib.md C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\macros/test.md C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\any\install_drivers_note.md
+
+C:\Users\jessi\git\cortex-staking-api\target\debug\deps\libsqlx-77f590dcbb4e3075.rmeta: C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\lib.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\any\mod.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\macros\mod.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\ty_match.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\spec_error.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\lib.md C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\macros/test.md C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\any\install_drivers_note.md
+
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\lib.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\any\mod.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\macros\mod.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\ty_match.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\spec_error.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\lib.md:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\macros/test.md:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sqlx-0.8.6\src\any\install_drivers_note.md:

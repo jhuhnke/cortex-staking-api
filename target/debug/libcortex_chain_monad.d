@@ -1,0 +1,1 @@
+C:\Users\jessi\git\cortex-staking-api\target\debug\libcortex_chain_monad.rlib: C:\Users\jessi\git\cortex-staking-api\crates\chains\monad\src\lib.rs C:\Users\jessi\git\cortex-staking-api\crates\core\src\lib.rs

@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    "crates/api",
+    "crates/core",
+    "crates/auth",
+    "crates/db",
+    "crates/chains/monad",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+authors = ["Cortex Global (https://cortexglobal.xyz)", "Jessica Huhnke (@web3_analyst)"]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+actix-web = "4"
+actix-cors = "0.7"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+sqlx = { version = "0.8.0", features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono", "macros"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+dotenvy = "0.15"
+utoipa = "5"
+utoipa-swagger-ui = { version = "9", features = ["actix-web"] }

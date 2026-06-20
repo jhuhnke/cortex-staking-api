@@ -1,0 +1,13 @@
+[package]
+name = "cortex-chain-monad"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+utoipa.workspace = true
+utoipa-swagger-ui.workspace = true
+
+cortex-core = { path = "../../core" }
