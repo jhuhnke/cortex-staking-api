@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: cortex-staking-postgres
+
+    environment:
+      POSTGRES_USER: cortex
+      POSTGRES_PASSWORD: cortex
+      POSTGRES_DB: cortex_staking_api
+
+    ports:
+      - "5367:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

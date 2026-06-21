@@ -5,9 +5,11 @@ version.workspace = true
 license.workspace = true
 
 [dependencies]
+chrono.workspace = true
 sqlx.workspace = true
 uuid.workspace = true
-chrono.workspace = true
 utoipa.workspace = true
 utoipa-swagger-ui.workspace = true
+
+cortex-auth = { path = "../auth" }
 cortex-core = { path = "../core" }

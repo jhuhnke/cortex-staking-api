@@ -1,5 +1,5 @@
-use utoipa::OpenApi;
 use crate::routes::admin::__path_admin_health;
+use utoipa::OpenApi;
 
 #[derive(OpenApi)]
 #[openapi(

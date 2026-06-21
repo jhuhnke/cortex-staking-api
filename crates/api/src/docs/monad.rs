@@ -1,5 +1,5 @@
-use utoipa::OpenApi;
 use crate::routes::monad::__path_monad_health;
+use utoipa::OpenApi;
 
 #[derive(OpenApi)]
 #[openapi(

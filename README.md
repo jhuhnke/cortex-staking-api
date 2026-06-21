@@ -13,39 +13,117 @@ The initial release focuses on:
 
 ---
 
+## Documentation
+
+Project documentation:
+
+* `README.md` - Project overview and architecture
+* `CONTRIBUTING.md` - Development workflow and contribution requirements
+* `migrations/schema.md` - Database schema documentation
+* `skills/` - Architecture and design standards
+
+All contributors should review `CONTRIBUTING.md` before submitting changes.
+
+---
+
 # Current Status
 
 ## Implemented
 
 * Rust workspace architecture
-* Actix Web API server
 * Modular crate structure
-* Route grouping
+* Actix Web API server
+* Shared application state (`AppState`)
+* SQLx PostgreSQL integration
+* Dockerized local PostgreSQL environment
+* Route grouping and isolation
 
   * `/healthz`
+  * `/readyz`
   * `/admin/*`
   * `/monad/*`
+* API key authentication framework
+* Organization-based authorization model
+
+  * Cortex organizations
+  * Partner organizations
+  * User accounts
+* Scope-based authorization model
+
+  * `admin`
+  * `read`
+  * `write`
+* Database schema and migrations
+
+  * Organizations
+  * Users
+  * API Keys
+  * API Key Scopes
+* Database-backed API key validation
+* Cortex admin route protection
+* Partner route protection
+* Authentication and authorization test coverage
 * OpenAPI / Swagger integration
-* Project design standards and skills documentation
+* Project design standards and architecture documentation
+* Local development tooling and seed data
 
 ## In Progress
 
-* API key authentication
-* Organization and scope-based authorization
-* SQLx database integration
-* Shared application state
-* Monad service layer
+* Organization management APIs
+* API key management APIs
+* API key creation and rotation workflows
+* API key revocation workflows
+* Repository pattern implementation
+* Monad service layer architecture
+* Request rate limiting
+* Audit logging foundation
+* Improved integration test coverage
 
 ## Planned
 
-* Organization management
-* API key lifecycle management
-* Audit logging
-* Validator accounting
-* Staking workflows
-* Multi-chain support
+### Authentication & Administration
+
+* Organization onboarding workflows
+* User self-service API key generation
+* Role and permission management
+* API usage analytics
+* Audit logging and compliance reporting
+
+### Monad
+
+* Validator discovery
+* Validator health monitoring
+* Staking operations
+* Unstaking operations
+* Reward reporting
+* Accounting endpoints
+
+### Multi-Chain Expansion
+
+* Ethereum support
+* Bitcoin support
+* Additional staking networks
+* Chain-agnostic service interfaces
+
+### Platform Services
+
+* Validator accounting engine
+* Scheduled background jobs
 * Infrastructure monitoring
+* Metrics and alerting
+* Distributed caching
 * Production deployment pipeline
+* CI/CD automation
+* Disaster recovery procedures
+
+### Future Products
+
+* Partner dashboard
+* User dashboard
+* Billing and subscription management
+* Public developer portal
+* Self-service API access
+* Usage-based rate limiting and quotas
 
 ---
 

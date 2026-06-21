@@ -1,4 +1,7 @@
-use actix_web::{HttpResponse, Responder, get, web};
+use actix_web::{get, web, HttpResponse, Responder};
+use cortex_auth::extractor::require_cortex_admin;
+
+use crate::extractors::auth::Authenticated;
 
 #[utoipa::path(
     get,
@@ -6,6 +9,7 @@ use actix_web::{HttpResponse, Responder, get, web};
     responses(
         (status = 200, description = "API is healthy"),
         (status = 401, description = "Unauthorized"),
+        (status = 403, description = "Forbidden"),
         (status = 404, description = "Not Found"),
         (status = 405, description = "Method Not Allowed"),
         (status = 429, description = "Too Many Requests"),
@@ -15,11 +19,13 @@ use actix_web::{HttpResponse, Responder, get, web};
     )
 )]
 #[get("/health")]
-async fn admin_health() -> impl Responder {
-    HttpResponse::Ok().json(serde_json::json!({
+pub async fn admin_health(auth: Authenticated) -> actix_web::Result<impl Responder> {
+    require_cortex_admin(&auth.0)?;
+
+    Ok(HttpResponse::Ok().json(serde_json::json!({
         "status": "ok",
         "scope": "admin"
-    }))
+    })))
 }
 
 pub fn configure(cfg: &mut web::ServiceConfig) {

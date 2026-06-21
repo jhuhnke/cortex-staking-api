@@ -1,11 +1,17 @@
-use actix_web::{HttpResponse, Responder, get, web};
+use actix_web::{get, web, HttpResponse, Responder};
+use cortex_auth::{
+    extractor::require_scope,
+    model::Scope,
+};
 
+use crate::extractors::auth::Authenticated;
 #[utoipa::path(
     get,
     path = "/monad/health",
     responses(
         (status = 200, description = "API is healthy"),
         (status = 401, description = "Unauthorized"),
+        (status = 403, description = "Forbidden"),
         (status = 404, description = "Not Found"),
         (status = 405, description = "Method Not Allowed"),
         (status = 429, description = "Too Many Requests"),
@@ -15,11 +21,13 @@ use actix_web::{HttpResponse, Responder, get, web};
     )
 )]
 #[get("/health")]
-async fn monad_health() -> impl Responder {
-    HttpResponse::Ok().json(serde_json::json!({
+pub async fn monad_health(auth: Authenticated) -> actix_web::Result<impl Responder> {
+    require_scope(&auth.0, Scope::Read)?;
+
+    Ok(HttpResponse::Ok().json(serde_json::json!({
         "status": "ok",
         "chain": "monad"
-    }))
+    })))
 }
 
 pub fn configure(cfg: &mut web::ServiceConfig) {
